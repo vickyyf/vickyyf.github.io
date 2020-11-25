@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>vicky_yf's homepage</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/cub.css"/>
+    <link rel="stylesheet" href="css/clock.css"/>
+    <link rel="stylesheet" href="css/flower.css">
+    <link rel="stylesheet" href="css/stars.css">
+    <link rel="stylesheet" href="css/sticky.css">
+    <link href="http://fonts.googleapis.com/css?family=Reenie+Beanie:regular" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jscex.min.js"></script>
+    <script type="text/javascript" src="js/jscex-parser.js"></script>
+    <script type="text/javascript" src="js/jscex-jit.js"></script>
+    <script type="text/javascript" src="js/jscex-builderbase.min.js"></script>
+    <script type="text/javascript" src="js/jscex-async.min.js"></script>
+    <script type="text/javascript" src="js/jscex-async-powerpack.min.js"></script>
+    <script type="text/javascript" src="js/mainview.js"></script>
+    <script type="text/javascript" src="js/tree.js"></script>
+
+    <audio autoplay="autoplay" loop="loop" preload="auto" src="music/remember.mp3"></audio>
+
+</head>
+
+<body>
+
+<div id="main-view" style="display: block;">
+    <!-- <input id="main-view-flag" style="width: 0; height: 0; display: none; border: 0; border-radius: 0%;" checked> -->
+    <canvas id="myCanvas" class="main-view-kit">
+        <script type="text/javascript" src="js/canvas.js"></script>
+    </canvas>
+    <div class="clock" id='clock1' class="main-view-kit">
+        <div class="flips">
+            <div class="digital front" data-number="0"></div>
+            <div class="digital back" data-number="1"></div>
+        </div>
+        <div class="flips">
+            <div class="digital front" data-number="0"></div>
+            <div class="digital back" data-number="1"></div>
+        </div>
+        <em class="divider">:</em>
+        <div class="flips">
+            <div class="digital front" data-number="0"></div>
+            <div class="digital back" data-number="1"></div>
+        </div>
+        <div class="flips">
+            <div class="digital front" data-number="0"></div>
+            <div class="digital back" data-number="1"></div>
+        </div>
+        <em class="divider">:</em>
+        <div class="flips">
+            <div class="digital front" data-number="0"></div>
+            <div class="digital back" data-number="1"></div>
+        </div>
+        <div class="flips">
+            <div class="digital front" data-number="0"></div>
+            <div class="digital back" data-number="1"></div>
+        </div>
+    </div>
+    <script type="text/javascript" src='js/clock.js'></script>
+    <div id="background" class="main-view-kit" style="background-image: url(img/background1.jpg); background-size: 100% 100%;"></div>
+    <p id="date-calc"></p>
+    <!-- <div class="container" style="top: 0px; left: 0px; right: 0px; bottom: 0px;">
+        <h1 class="title"></h1>
+        <div class="book">
+            <div class="gap"></div>
+            <div class="pages">
+                <div class="page"></div>
+                <div class="page"></div>
+                <div class="page"></div>
+                <div class="page"></div>
+                <div class="page"></div>
+                <div class="page"></div>
+            </div>
+            <div class="flips">
+                <div class="flip flip1">
+                    <div class="flip flip2">
+                        <div class="flip flip3">
+                            <div class="flip flip4">
+                                <div class="flip flip5">
+                                    <div class="flip flip6">
+                                        <div class="flip flip7">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <div class="wrap" id="cube-wrap">
+        <div class="cube">
+            <div class="out_front">
+                <img src="img/1.jpg" class="pic">
+            </div>
+            <div class="out_back">
+                <img src="img/2.jpg" class="pic">
+            </div>
+            <div class="out_left">
+                <img src="img/3.jpg" class="pic">
+            </div>
+            <div class="out_right">
+                <img src="img/4.jpg" class="pic">
+            </div>
+            <div class="out_top">
+                <img src="img/5.jpg" class="pic">
+            </div>
+            <div class="out_bottom">
+                <img src="img/6.jpg" class="pic">
+            </div>
+            <span class="in_front">
+                <img src="img/7.jpg" class="in_pic">
+            </span>
+            <span class="in_back">
+                <img src="img/8.jpg" class="in_pic">
+            </span>
+            <span class="in_left">
+                <img src="img/9.jpg" class="in_pic">
+            </span>
+            <span class="in_right">
+                <img src="img/10.jpg" class="in_pic">
+            </span>
+            <span class="in_top">
+                <img src="img/11.jpg" class="in_pic">
+            </span>
+            <span class="in_bottom">
+                <img src="img/12.jpg" class="in_pic">
+            </span>
+        </div>
+    </div>
+</div>
+
+<div id="next-view">
+    <div id="background1" class="main-view-kit" style="background-image: url(img/background1.jpg); background-size: 100% 100%;"></div>
+    <input id="next-view-flag" style="width: 0; height: 0; display: none; border: 0; border-radius: 0%;">
+    <div class="origin">
+        <div class="control">
+            <div class="galaxy" id="gal"></div>
+        </div>
+    </div>
+    <div id="tree-wrapper">
+        <canvas id="love-tree"></canvas>
+    </div>
+    <div id="sticky-wrapper">
+        <ul>
+            <li><a href="#">
+                <h2>HycFancy:</h2>
+                <p>
+                    </br>
+                    I'm drawn to you like a moth to a flame.</br>
+                    </br></br>
+                    I'll make all my oaths come true.</br>
+                </p>
+            </a></li>
+            <li><a href="#">
+                <h2>HycFancy:</h2>
+                <p>
+                    </br>
+                    May you be safe and successful.</br>
+                    </br></br>
+                    May all our dreams come true.</br>
+                </p>
+            </a></li>
+        </ul>
+        
+    </div>
+</div>
+
+</body>
+
+
+</html>
